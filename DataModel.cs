@@ -43,6 +43,9 @@ namespace BugDrivenProject
 
     }
 
+    /// <summary>
+    /// Виды спорта
+    /// </summary>
     public enum KindOfSports
     {
         /// <summary>
@@ -59,8 +62,12 @@ namespace BugDrivenProject
         Skiing
     }
 
+    /// <summary>
+    /// Спортсмен 
+    /// </summary>
     public class Sportsman
     {
+
         /// <summary>
         /// Имя
         /// </summary>
@@ -93,8 +100,15 @@ namespace BugDrivenProject
         /// Персональные рекорды
         /// </summary>
         public List<PersonalRecords> PersonalRecords { get; set; }
+        /// <summary>
+        /// Тренировки спортсмена
+        /// </summary>
+        public List<Training> Trainings { get; set; }
     }
 
+    /// <summary>
+    /// Личные рекорды спортсмена
+    /// </summary>
     public class PersonalRecords
     {
         /// <summary>
@@ -111,6 +125,9 @@ namespace BugDrivenProject
         public DateTime Time { get; set; }
     }
 
+    /// <summary>
+    /// Пол
+    /// </summary>
     public enum Gender
     {
         /// <summary>
